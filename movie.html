@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Movie Collection</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #121212;
+      color: white;
+      padding: 20px;
+    }
+
+    h1 {
+      margin-bottom: 40px;
+    }
+
+    .movie-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .movie {
+      background-color: #1e1e1e;
+      padding: 10px;
+      border-radius: 10px;
+      width: 320px;
+      box-shadow: 0 0 10px #000;
+    }
+
+    video {
+      border-radius: 10px;
+      width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <h1>My Movie Collection</h1>
+  <div class="movie-grid">
+    <div class="movie">
+      <video controls src="assets/mmk1.mp4"></video>
+      <p>Movie 1 - MP4</p>
+    </div>
+    <div class="movie">
+      <video controls src="assets/mmk2.mp4"></video>
+      <p>Movie 2 - 3GP</p>
+    </div>
+    <div class="movie">
+      <video controls src="assets/mmk3.mp4"></video>
+      <p>Movie 3 - MP4</p>
+    </div>
+  </div>
+
+  <script>
+    // Optional JS logic can go here (e.g. filtering, autoplay, etc.)
+    console.log("Movie collection loaded");
+  </script>
+</body>
+</html>
